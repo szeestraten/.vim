@@ -10,7 +10,9 @@ syntax on
 
 set t_Co=256
 set term=xterm-256color
+syntax enable
 set background=dark
+colorscheme solarized
 
 filetype on
 filetype plugin on
