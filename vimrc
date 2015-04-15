@@ -3,10 +3,11 @@ call pathogen#helptags()
 
 set hidden
 set number
-set vb t_vb=
-set ts=2 sts=2 sw=2 expandtab
+set ts=4 sts=4 sw=4 expandtab
+set autoindent
 set smarttab
-syntax on
+set cursorline
+set showmatch
 
 set t_Co=256
 set term=xterm-256color
@@ -17,4 +18,4 @@ colorscheme solarized
 filetype on
 filetype plugin on
 
-set scrolloff=5
+set scrolloff=7
