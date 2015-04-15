@@ -19,3 +19,4 @@ filetype on
 filetype plugin on
 
 set scrolloff=7
+set nofoldenable
