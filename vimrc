@@ -8,15 +8,12 @@ set autoindent
 set smarttab
 set cursorline
 set showmatch
+set scrolloff=15
+set nofoldenable
 
-set t_Co=256
-set term=xterm-256color
 syntax enable
+set t_Co=16
 set background=dark
 colorscheme solarized
 
-filetype on
-filetype plugin on
-
-set scrolloff=7
-set nofoldenable
+filetype plugin indent on
