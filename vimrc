@@ -11,9 +11,17 @@ set showmatch
 set scrolloff=15
 set nofoldenable
 
+"Syntax and colors"
 syntax enable
 set t_Co=16
-set background=dark
 colorscheme solarized
+
+"Make it nicer on GVIM"
+if has("gui_running")
+  set background=light
+  set guifont=Monospace\ 11
+else
+  set background=dark
+endif
 
 filetype plugin indent on
