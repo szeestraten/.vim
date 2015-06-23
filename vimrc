@@ -10,6 +10,7 @@ set cursorline
 set showmatch
 set scrolloff=15
 set nofoldenable
+set pastetoggle=<F2>
 
 "Syntax and colors"
 syntax enable
