@@ -26,4 +26,5 @@ else
 endif
 
 filetype plugin indent on
+set directory^=$HOME/.vim/tmp//
 
