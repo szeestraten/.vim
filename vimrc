@@ -27,3 +27,4 @@ endif
 
 filetype plugin indent on
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
+set directory^=$HOME/.vim/tmp//
