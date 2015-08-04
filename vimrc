@@ -26,4 +26,4 @@ else
 endif
 
 filetype plugin indent on
-
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
