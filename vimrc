@@ -10,6 +10,7 @@ set cursorline
 set showmatch
 set scrolloff=15
 set nofoldenable
+set pastetoggle=<F2>
 
 "Syntax and colors"
 syntax enable
@@ -27,3 +28,5 @@ endif
 map <F10> :let &background = ( &background == "dark"? "light" : "dark" )<CR>
 
 filetype plugin indent on
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
+set directory^=$HOME/.vim/tmp//
