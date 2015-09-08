@@ -24,5 +24,6 @@ else
   set background=dark
 endif
 
-filetype plugin indent on
+map <F10> :let &background = ( &background == "dark"? "light" : "dark" )<CR>
 
+filetype plugin indent on
