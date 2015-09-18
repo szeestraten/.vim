@@ -27,6 +27,8 @@ endif
 
 map <F10> :let &background = ( &background == "dark"? "light" : "dark" )<CR>
 
+set directory^=$HOME/.vim/tmp//
+
 filetype plugin indent on
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
-set directory^=$HOME/.vim/tmp//
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
