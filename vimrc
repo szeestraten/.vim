@@ -32,3 +32,6 @@ set directory^=$HOME/.vim/tmp//
 filetype plugin indent on
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
+"Windows stuff"
+set backspace=indent,eol,start
