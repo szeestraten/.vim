@@ -1,7 +1,6 @@
-# Vim stuff
+# Vim configuration
 
-### Create symlinks:
 ```
-git clone https://github.com/szeestraten/dotvim.git ~/.vim --recursive
+git clone https://github.com/szeestraten/.vim.git --recursive
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
