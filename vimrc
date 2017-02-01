@@ -35,3 +35,4 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
 "Windows stuff"
 set backspace=indent,eol,start
+
