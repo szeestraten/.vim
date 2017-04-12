@@ -11,3 +11,8 @@ ln -s ~/.vim/vimrc ~/.vimrc
 git clone https://github.com/szeestraten/.vim.git vimfiles --recursive
 mklink _vimrc vimfiles\vimrc
 ```
+
+# Updating submodules
+```
+git submodule update --recursive --remote
+```
