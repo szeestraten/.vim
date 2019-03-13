@@ -1,5 +1,26 @@
-call pathogen#infect()
-call pathogen#helptags()
+" Install and run vim-plug on first run
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+Plug 'pearofducks/ansible-vim'
+Plug 'vim-scripts/iptables'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'altercation/vim-colors-solarized'
+Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
+
+" Initialize plugin system
+call plug#end()
+
+"call pathogen#infect()
+"call pathogen#helptags()
 
 syntax enable
 colorscheme solarized
