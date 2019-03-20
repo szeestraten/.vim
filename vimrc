@@ -12,11 +12,11 @@ Plug 'vim-scripts/iptables'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'unblevable/quick-scope'
-Plug 'itchyny/vim-gitbranch'
 
 " Initialize plugin system
 call plug#end()
@@ -75,7 +75,7 @@ let g:lightline = {
 	\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
 	\ },
   \ 'component_function': {
-  \ 	'gitbranch': 'gitbranch#name'
+  \ 	'gitbranch': 'fugitive#head'
   \ },
 	\ }
 set laststatus=2
